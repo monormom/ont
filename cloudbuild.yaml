@@ -8,5 +8,5 @@ steps:
     entrypoint: /bin/bash
 timeout: 86400s
 options:
-  machineType: 'N1_STANDARD_16'
+  machineType: 'N1_STANDARD_8'
   diskSizeGb: '1000'
